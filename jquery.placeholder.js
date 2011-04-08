@@ -27,7 +27,7 @@
     } else {
       return this.each(function() {
         var t = $(this);
-        var placeholder = t.attr('placeholder') || t.val();
+        var placeholder = t.attr('placeholder');
 
         // There's no placeholder. Next!
         if (!placeholder) {
