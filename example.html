@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery.placeholder.js" type="text/javascript" charset="utf-8"></script>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'>
+  
+  <style type="text/css" media="screen">
+    
+    body {
+      background:#f0f0f0;
+      font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
+      font-size:10px;
+      padding:25px 40px;
+    }
+    
+    a {
+      color:#06C;
+      text-decoration:none;
+    }
+    a:hover {
+      text-decoration:underline;
+    }
+    
+    h1 {
+      margin:0;
+      font:4.4em 'Droid Serif', Georgia, 'Times new roman', serif;
+      text-shadow:2px 2px 2px #aaa;
+    }
+    
+    p.tagline {
+      font-size:1.6em;
+      margin:5px 0 30px;
+    }
+    
+    
+    p {
+      font-size:1.3em;
+      line-height:150%;
+    }
+    
+    pre {
+      border:1px solid #bbb;
+      padding:8px;
+      font:1.3em 'Inconsolata', 'Monaco', 'Courier new', 'Courier';
+      background:#fff;
+      -webkit-box-shadow:2px 2px 0 #e0e4e5;
+         -moz-box-shadow:2px 2px 0 #e0e4e5;
+              box-shadow:2px 2px 0 #e0e4e5;
+      margin-bottom:25px;
+    }
+    
+    h2 {
+      font:1.8em 'Droid Serif', Georgia, 'Times new roman', serif;
+      margin:1em 0 5px;
+    }
+    
+    
+  </style>
+  
+  
+</head>
+<body id="example">
+  
+  <header>
+    <h1>jquery.placeholder</h1>
+    <p class="tagline">A jQuery plugin to simulate HTML5 placeholder attribute on input elements.</p>
+  </header>
+  
+  <p>Just create an input with a placeholder attribute</p>
+  
+  <pre>&lt;input type=&quot;text&quot; placeholder=&quot;This is a placeholder text&quot; id=&quot;placeholder_me&quot; /&gt;</pre>
+  
+  <p>And then do some javascript awesomess</p>
+  <pre>
+&lt;!-- Remember to include jQuery too! --&gt;
+&lt;script src=&quot;jquery.placeholder.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+  $(&#x27;#placeholder_me&#x27;).placeholder();
+&lt;/script&gt;</pre>
+  
+  <h2>Live demo</h2>
+  <p>Try clicking inside the input and watch how the placeholder text just dissapears</p>
+  <input type="text" placeholder="This is a placeholder text" id="placeholder_me" size="100" />
+  <script type="text/javascript" charset="utf-8">
+    $('#placeholder_me').placeholder();
+  </script>
+  
+  <h2>Get the code</h2>
+  <p><a href="https://github.com/afgomez/jquery.placeholder">Github</a> | <a href="https://github.com/afgomez/jquery.tabs/zipball/master">Download</a></p>
+  
+</body>
+</html>
