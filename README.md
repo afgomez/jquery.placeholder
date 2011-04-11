@@ -11,7 +11,7 @@ Just call placeholder() on the input in which you want a placeholder text loaded
 
     <input id="input" type="text" placeholder="default value" />
     <script type="text/javascript" charset="utf-8">   
-        $('#input').inputDV();
+        $('#input').placeholder();
     </script>
 
 The plugin will first look if the browser has an implementation of the placeholder attribute. If it doesn't
