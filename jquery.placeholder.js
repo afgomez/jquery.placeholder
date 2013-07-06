@@ -3,7 +3,7 @@
   /**
   * testPlaceholder()
   * Test if browser support the HTML5 placeholder attribute
-  * 
+  *
   * @return {bool}
   */
   function testPlaceholder() {
@@ -11,7 +11,9 @@
     return 'placeholder' in input;
   }
 
-
+  function is_placeholder(el) {
+    return el.val() == el.data('placeholder');
+  }
   /**
   * jQuery.placeholder. Sets a default value for an input box that dissapears when
   * user focus on the field. Just like HTML5 'placeholder' attribute
@@ -37,14 +39,18 @@
         // Store the default value
         t.data('placeholder', placeholder);
         t.val(placeholder);
-        
+
         t.focus(function() {
-          if (t.val() == t.data('placeholder')) {
+          if ( is_placeholder(t) ) {
             t.val('');
           }
         }).blur(function() {
           if(!t.val()) {
             t.val(t.data('placeholder'));
+          }
+        }).closest('form').on('submit', function() {
+          if ( is_placeholder(t) ) {
+            t.val('');
           }
         });
       });
